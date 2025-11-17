@@ -1,0 +1,147 @@
+body {
+  color: var(--theme-color-accent);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  .lock & {
+    overflow: hidden;
+  }
+  .search-open & {
+    overflow: hidden;
+  }
+  .menu-open & {
+    overflow: hidden;
+  }
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+fieldset,
+fieldset legend {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  outline: none;
+  color: currentcolor;
+}
+
+.block1 {
+  margin-bottom: 80px;
+}
+
+.block2 {
+  margin-bottom: 90px;
+  @media (max-width: 768px) {
+    margin-bottom: 80px;
+  }
+}
+
+.block3 {
+  margin-bottom: 60px;
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.title2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #111;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 110%;
+    img {
+      display: none;
+    }
+  }
+}
+
+.btn {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: #024bcf;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.3s;
+  padding: 5px 20px;
+  border-radius: 10px;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.heading-complex {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 77px;
+  margin: 0px 77px 35px 0px;
+  @media (max-width: 1240px) {
+    margin: 0px 0px 35px 0px;
+    gap: 30px;
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  @media (max-width: 768px) {
+    margin: 0px 0px 18px 0px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #111;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+  a {
+    display: flex;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    img {
+      width: 19px;
+      height: 19px;
+    }
+  }
+}

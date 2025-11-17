@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="block-intro block1">
+				<div class="container">
+					<div class="block-intro__content">
+						<div class="top-block-intro">
+							<div class="top-block-intro__slider swiper">
+								<div class="top-block-intro__wrapper swiper-wrapper">
+									<a href="#" class="top-block-intro__slide swiper-slide">
+										<img src="img/image1.webp" alt="">
+									</a>
+									<a href="#" class="top-block-intro__slide swiper-slide">
+										<img src="img/image1.webp" alt="">
+									</a>
+									<a href="#" class="top-block-intro__slide swiper-slide">
+										<img src="img/image1.webp" alt="">
+									</a>
+									<a href="#" class="top-block-intro__slide swiper-slide">
+										<img src="img/image1.webp" alt="">
+									</a>
+									<a href="#" class="top-block-intro__slide swiper-slide">
+										<img src="img/image1.webp" alt="">
+									</a>
+									<a href="#" class="top-block-intro__slide swiper-slide">
+										<img src="img/image1.webp" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="top-block-intro__pagination pagination"></div>
+						</div>
+						<div class="center-block-intro">
+							<div class="center-block-intro__slider swiper">
+								<div class="center-block-intro__wrapper swiper-wrapper">
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image2.webp" alt="">
+										</div>
+										<p>
+											Экспедиция
+											<br>
+											в горы
+										</p>
+									</a>
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image3.webp" alt="">
+										</div>
+										<p>
+											Запись<br> в сервис
+										</p>
+									</a>
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image4.webp" alt="">
+										</div>
+										<p>
+											Проведение<br> мероприятия
+										</p>
+									</a>
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image5.webp" alt="">
+										</div>
+										<p>
+											Оформление<br> мотоцикла
+										</p>
+									</a>
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image6.webp" alt="">
+										</div>
+										<p>
+											Техника<br> в наличии
+										</p>
+									</a>
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image7.webp" alt="">
+										</div>
+										<p>
+											Экспедиция<br> в горы
+										</p>
+									</a>
+									<a href="#" class="center-block-intro__slide swiper-slide">
+										<div class="center-block-intro__image">
+											<img src="img/image7.webp" alt="">
+										</div>
+										<p>
+											Экспедиция<br> в горы
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="center-block-intro__arrow-prev arrow-prev">
+								<svg aria-hidden="true" width="25" height="10">
+									<use xlink:href="img/sprite.svg#arrow2"></use>
+								</svg>
+							</div>
+							<div class="center-block-intro__arrow-next arrow-next">
+								<svg aria-hidden="true" width="25" height="10">
+									<use xlink:href="img/sprite.svg#arrow2"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="bottom-block-intro">
+							<div class="bottom-block-intro__column">
+								<div class="bottom-block-intro__image">
+									<img loading="lazy" src="img/icon/icon1.svg" alt="">
+								</div>
+								<div class="bottom-block-intro__text">
+									<div class="bottom-block-intro__title">
+										Быстрая<br> доставка
+									</div>
+									<p>
+										Отправим технику в любую точку России за 3–7 дней или подготовим к самовывозу в
+										день заказа
+									</p>
+								</div>
+							</div>
+							<div class="bottom-block-intro__column">
+								<div class="bottom-block-intro__image">
+									<img loading="lazy" src="img/icon/icon2.svg" alt="">
+								</div>
+								<div class="bottom-block-intro__text">
+									<div class="bottom-block-intro__title">
+										Свой<br> сервисный центр
+									</div>
+									<p>
+										Обслуживание и ремонт
+										с использованием оригинальных запчастей. Онлайн-запись и гарантия
+									</p>
+								</div>
+							</div>
+							<div class="bottom-block-intro__column">
+								<div class="bottom-block-intro__image">
+									<img loading="lazy" src="img/icon/icon3.svg" alt="">
+								</div>
+								<div class="bottom-block-intro__text">
+									<div class="bottom-block-intro__title">
+										Trade-in<br> и рассрочка
+									</div>
+									<p>
+										Сдайте старую технику в зачёт новой или купитебез переплат
+									</p>
+								</div>
+							</div>
+							<div class="bottom-block-intro__column">
+								<div class="bottom-block-intro__image">
+									<img loading="lazy" src="img/icon/icon4.svg" alt="">
+								</div>
+								<div class="bottom-block-intro__text">
+									<div class="bottom-block-intro__title">
+										Техника<br> в наличии
+									</div>
+									<p>
+										Реальные остатки
+										по складам. Забирайте
+										в день заказа
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-section1 block2">
+				<div class="container">
+					<div class="heading-complex">
+						<h2 class="title2">
+							Всё, что нужно для скорости, надёжности и драйва
+						</h2>
+						<p>Квадроциклы, мотоциклы, экипировка, аксессуары, запчасти и тюнинг. Мы собрали всё в одном
+							месте, чтобы вы могли выбрать и уехать на новой технике уже сегодня.</p>
+					</div>
+					<div class="block-section1__content">
+						<div class="block-section1__cards">
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image11.webp" alt="">
+								<div class="block-section1__title">Квадроциклы</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image12.webp" alt="">
+								<div class="block-section1__title">Мотоциклы</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image13.webp" alt="">
+								<div class="block-section1__title">Экипировка</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image14.webp" alt="">
+								<div class="block-section1__title">ТЕХНИКА Б/У</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image15.webp" alt="">
+								<div class="block-section1__title">Аксессуары</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image16.webp" alt="">
+								<div class="block-section1__title">Запчасти</div>
+							</a>
+						</div>
+						<a href="#" class="block-section1__button btn">Весь каталог</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-section1 block-section2 block3">
+				<div class="container">
+					<div class="heading-complex">
+						<h2 class="title2">
+							Горячие предложения
+							и спецакции
+							<img loading="lazy" src="img/icon/flame.svg" alt="">
+						</h2>
+						<p>
+							Не упустите шанс купить технику и аксессуары по особым условиям. Скидки, подарки и
+							специальные предложения — только ограниченное время. Забирайте свою выгоду уже сегодня!
+						</p>
+					</div>
+					<div class="block-section1__content">
+						<div class="block-section1__cards">
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image17.webp" alt="">
+								<div class="block-section1__text">
+									<div class="block-section1__name">
+										100 000 квадроциклов CFMOTO продано в России!
+									</div>
+									<div class="block-section1__arrow">
+										<svg aria-hidden="true" width="17" height="15">
+											<use xlink:href="img/sprite.svg#arrow3"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image18.webp" alt="">
+								<div class="block-section1__text">
+									<div class="block-section1__name">
+										100 000 квадроциклов CFMOTO продано в России!
+									</div>
+									<div class="block-section1__arrow">
+										<svg aria-hidden="true" width="17" height="15">
+											<use xlink:href="img/sprite.svg#arrow3"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="block-section1__card">
+								<img loading="lazy" src="img/image19.webp" alt="">
+								<div class="block-section1__text">
+									<div class="block-section1__name">
+										100 000 квадроциклов CFMOTO продано в России!
+									</div>
+									<div class="block-section1__arrow">
+										<svg aria-hidden="true" width="17" height="15">
+											<use xlink:href="img/sprite.svg#arrow3"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% include 'blocks/forms.njk' %}
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/scripts.njk' %}
+	<div id="call" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div data-close class="popup__close">
+					<img loading="lazy" src="img/icon/close.svg" alt="">
+				</div>
+				<div class="popup__body">
+					<div class="popup__title">Заказать звонок</div>
+					<form action="#" class="form">
+						<div class="form__inputs">
+							<div class="form__input">
+								<img loading="lazy" src="img/icon/user.svg" alt="" class="form__icon">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя">
+							</div>
+							<div class="form__input">
+								<img loading="lazy" src="img/icon/phone2.svg" alt="" class="form__icon">
+								<input data-required autocomplete="off" type="text" name="form[]"
+									placeholder="Ваш телефон">
+							</div>
+						</div>
+						<button type="submit" class="btn btn-big">
+							<span>Отправить</span>
+						</button>
+						<div class="form__text">
+							Нажимая на кнопку “Отправить” вы соглашаетесь с политикой конфиденциальности
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
