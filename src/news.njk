@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Новости</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Главная
+                                <svg aria-hidden="true" width="12" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><span>Новости</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block-news">
+                <div class="container">
+                    <div class="block-news__content">
+                        <h1 class="title2">Новости мотосалона Forsage</h1>
+                        <div class="block-news__body">
+                            <div class="block-news__cards">
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image17.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Пятигорск 8.0</div>
+                                        <div class="block-news__data">14-17 августа</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image18.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Мототур "Солнечная Абхазия"</div>
+                                        <div class="block-news__data">18-21 сентября</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image19.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Моточетверг в стиле 90-х</div>
+                                        <div class="block-news__data">7 августа</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image18.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Пятигорск 8.0</div>
+                                        <div class="block-news__data">14-17 августа</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image17.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Мототур "Солнечная Абхазия"</div>
+                                        <div class="block-news__data">18-21 сентября</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image19.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Моточетверг в стиле 90-х</div>
+                                        <div class="block-news__data">7 августа</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image17.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Пятигорск 8.0</div>
+                                        <div class="block-news__data">14-17 августа</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image19.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Мототур "Солнечная Абхазия"</div>
+                                        <div class="block-news__data">18-21 сентября</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-news__card">
+                                    <div class="block-news__image">
+                                        <img src="img/image18.webp" alt="">
+                                    </div>
+                                    <div class="block-news__text">
+                                        <div class="block-news__title">Моточетверг в стиле 90-х</div>
+                                        <div class="block-news__data">7 августа</div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% include 'blocks/pagination.njk' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

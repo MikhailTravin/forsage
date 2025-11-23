@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Корзина</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main main-cart">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Главная
+                                <svg aria-hidden="true" width="12" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><span>Корзина</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block-cart">
+                <div class="container">
+                    <div class="block-cart__content">
+                        <h1 class="title2">Корзина</h1>
+                        <div class="block-cart__tables">
+                            <div class="block-cart__table">
+                                <div class="block-cart__image">
+                                    <img src="img/product1.webp" alt="">
+                                </div>
+                                <div class="block-cart__center">
+                                    <div class="block-cart__left">
+                                        <a href="#" class="block-cart__title">
+                                            Квадроцикл YACOTA SELA 200
+                                        </a>
+                                        <div class="block-cart__price1">
+                                            225 000 ₽
+                                            <span>Цена за 1 шт</span>
+                                        </div>
+                                    </div>
+                                    <div class="block-cart__right">
+                                        <div data-quantity class="quantity">
+                                            <div class="quantity__input">
+                                                <input data-quantity-value autocomplete="off" type="text" name="form[]"
+                                                    value="1">
+                                            </div>
+                                            <div class="quantity__buttons">
+                                                <button data-quantity-plus type="button"
+                                                    class="quantity__button quantity__button_plus">
+                                                    <svg aria-hidden="true" width="8" height="8">
+                                                        <use xlink:href="img/sprite.svg#plus1"></use>
+                                                    </svg>
+                                                </button>
+                                                <button data-quantity-minus type="button"
+                                                    class="quantity__button quantity__button_minus">
+                                                    <svg aria-hidden="true" width="8" height="1">
+                                                        <use xlink:href="img/sprite.svg#minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="block-cart__price2">225 000 ₽</div>
+                                        <button type="button" class="block-cart__icon">
+                                            <svg aria-hidden="true" width="13" height="15">
+                                                <use xlink:href="img/sprite.svg#trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="block-cart__table">
+                                <div class="block-cart__image">
+                                    <img src="img/product2.webp" alt="">
+                                </div>
+                                <div class="block-cart__center">
+                                    <div class="block-cart__left">
+                                        <a href="#" class="block-cart__title">
+                                            Шлем YAC L 35
+                                        </a>
+                                        <div class="block-cart__price1">
+                                            5 325 ₽
+                                            <span>Цена за 1 шт</span>
+                                        </div>
+                                    </div>
+                                    <div class="block-cart__right">
+                                        <div data-quantity class="quantity">
+                                            <div class="quantity__input">
+                                                <input data-quantity-value autocomplete="off" type="text" name="form[]"
+                                                    value="1">
+                                            </div>
+                                            <div class="quantity__buttons">
+                                                <button data-quantity-plus type="button"
+                                                    class="quantity__button quantity__button_plus">
+                                                    <svg aria-hidden="true" width="8" height="8">
+                                                        <use xlink:href="img/sprite.svg#plus1"></use>
+                                                    </svg>
+                                                </button>
+                                                <button data-quantity-minus type="button"
+                                                    class="quantity__button quantity__button_minus">
+                                                    <svg aria-hidden="true" width="8" height="1">
+                                                        <use xlink:href="img/sprite.svg#minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="block-cart__price2">15 975 ₽</div>
+                                        <button type="button" class="block-cart__icon">
+                                            <svg aria-hidden="true" width="13" height="15">
+                                                <use xlink:href="img/sprite.svg#trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="block-cart__table">
+                                <div class="block-cart__image">
+                                    <img src="img/product3.webp" alt="">
+                                </div>
+                                <div class="block-cart__center">
+                                    <div class="block-cart__left">
+                                        <a href="#" class="block-cart__title">
+                                            Защита тела FLY RACING REVEL MX белый
+                                        </a>
+                                        <div class="block-cart__price1">
+                                            12 341 ₽
+                                            <span>Цена за 1 шт</span>
+                                        </div>
+                                    </div>
+                                    <div class="block-cart__right">
+                                        <div data-quantity class="quantity">
+                                            <div class="quantity__input">
+                                                <input data-quantity-value autocomplete="off" type="text" name="form[]"
+                                                    value="1">
+                                            </div>
+                                            <div class="quantity__buttons">
+                                                <button data-quantity-plus type="button"
+                                                    class="quantity__button quantity__button_plus">
+                                                    <svg aria-hidden="true" width="8" height="8">
+                                                        <use xlink:href="img/sprite.svg#plus1"></use>
+                                                    </svg>
+                                                </button>
+                                                <button data-quantity-minus type="button"
+                                                    class="quantity__button quantity__button_minus">
+                                                    <svg aria-hidden="true" width="8" height="1">
+                                                        <use xlink:href="img/sprite.svg#minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="block-cart__price2">24 682 ₽</div>
+                                        <button type="button" class="block-cart__icon">
+                                            <svg aria-hidden="true" width="13" height="15">
+                                                <use xlink:href="img/sprite.svg#trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="block-cart__totals">
+                            <div class="block-cart__total-title">Сумма заказа</div>
+                            <div class="block-cart__summ">124 682 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-contacts3 block1">
+                <div class="container">
+                    <div class="block-contacts3__content">
+                        <img loading="lazy" src="img/image55.webp" alt="" class="block-contacts3__pic1">
+                        <div class="heading-complex">
+                            <h2 class="title2">
+                                Заполните контактные данные
+                            </h2>
+                            <p>
+                                Остался последний шаг — подтвердите заказ, и мы сразу начнём готовить его к отправке.
+                                Укажите контакты и адрес, чтобы техника приехала точно к вам и в срок.
+                            </p>
+                        </div>
+                        <div class="block-contacts3__body">
+                            <div class="block-contacts3__image">
+                                <img loading="lazy" src="img/image54.webp" alt="">
+                            </div>
+                            <div class="block-contacts3__form">
+                                <form action="#">
+                                    <div class="form">
+                                        <div class="form__inputs first">
+                                            <div class="form__input">
+                                                <input data-required autocomplete="off" type="text" name="form[]"
+                                                    data-error="Обязательное поле" placeholder="Имя">
+                                            </div>
+                                            <div class="form__input">
+                                                <input data-required autocomplete="off" type="text" name="form[]"
+                                                    data-error="Обязательное поле" placeholder="Телефон" class="tel">
+                                            </div>
+                                        </div>
+                                        <div class="form__inputs">
+                                            <div class="form__input">
+                                                <input data-required="email" autocomplete="off" type="text"
+                                                    name="form[]" data-error="Обязательное поле" placeholder="E-mail">
+                                            </div>
+                                            <div class="form__input">
+                                                <input data-required autocomplete="off" type="text" name="form[]"
+                                                    data-error="Обязательное поле" placeholder="Адрес доставки">
+                                            </div>
+                                            <div class="form__input">
+                                                <textarea placeholder="Комментарий к заказу"></textarea>
+                                            </div>
+                                        </div>
+                                        <label class="checkbox">
+                                            <input data-required data-error="Обязательно поле" class="checkbox__input"
+                                                type="checkbox" name="form[]">
+                                            <span class="checkbox__label">
+                                                <span class="checkbox__icon">
+                                                    <svg aria-hidden="true" width="16" height="6">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__text">
+                                                    Соглашаюсь на обработку персональных данных
+                                                    <br>
+                                                    и принимаю политику конфиденциальности
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <button type="submit" class="form__button btn">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-related-products">
+                <div class="container">
+                    <h2 class="title2">
+                        Добавить к заказу
+                    </h2>
+                    <div class="block-related-products__content">
+                        <div class="block-related-products__slider swiper">
+                            <div class="block-related-products__wrapper swiper-wrapper">
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-related-products__arrows">
+                            <div class="block-related-products__arrow-prev arrow-prev2">
+                                <svg aria-hidden="true" width="12" height="6">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </div>
+                            <div class="block-related-products__arrow-next arrow-next2">
+                                <svg aria-hidden="true" width="12" height="6">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

@@ -17,6 +17,18 @@
     .bottom-header {
       top: 0;
     }
+    .catalog-menu__dropdown {
+      @media (max-width: 992px) {
+        top: 50px;
+        height: calc(100vh - 50px);
+      }
+    }
+    .search-header {
+      @media (max-width: 992px) {
+        top: 50px;
+        height: calc(100vh - 50px);
+      }
+    }
   }
 }
 
@@ -89,6 +101,8 @@
 }
 
 .center-header {
+  position: relative;
+  z-index: 101;
   transition: all 0.3s ease-in-out 0.2s;
   padding: 11px 0px 12px 0px;
   @media (max-width: 992px) {
@@ -451,6 +465,10 @@
     }
     svg {
       fill: #404040;
+    }
+    img {
+      width: 14px;
+      height: 14px;
     }
     &.search {
       display: none;

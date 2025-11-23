@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Карточка товара2</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main main-product-card2">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Главная
+                                <svg aria-hidden="true" width="12" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Каталог
+                                <svg aria-hidden="true" width="12" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Экипировка
+                                <svg aria-hidden="true" width="12" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><span>Защита тела</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block-product-card2 block1">
+                <div class="container">
+                    <div class="heading-complex">
+                        <h1 class="title2">
+                            Защита тела FLY RACING REVEL MX белый
+                        </h1>
+                        <div class="heading-complex__article">
+                            Артикул: ЦБ000062026
+                        </div>
+                    </div>
+                    <div class="block-product-card2__content">
+                        <div class="left-product-card2">
+                            <div class="left-product-card2__top">
+                                <div class="images-product">
+                                    <div class="favorites-icons">
+                                        <div class="favorites-icons__icon">
+                                            <img src="img/icon/heart2.svg" alt="">
+                                        </div>
+                                        <div class="favorites-icons__icon-active">
+                                            <svg aria-hidden="true" width="25" height="21">
+                                                <use xlink:href="img/sprite.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="images-product__body">
+                                        <div class="images-product__slider swiper">
+                                            <div class="images-product__wrapper swiper-wrapper">
+                                                <a href="img/product1.webp" data-fancybox="gallery1"
+                                                    class="images-product__slide swiper-slide">
+                                                    <img src="img/product1.webp" alt="">
+                                                </a>
+                                                <a href="files/videos/video.mp4" data-fancybox="gallery1"
+                                                    class="images-product__slide swiper-slide">
+                                                    <img src="img/product1.webp" alt="">
+                                                    <div class="play">
+                                                        <svg aria-hidden="true" width="50" height="50">
+                                                            <use xlink:href="img/sprite.svg#play"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <a href="img/product3.webp" data-fancybox="gallery1"
+                                                    class="images-product__slide swiper-slide">
+                                                    <img src="img/product3.webp" alt="">
+                                                </a>
+                                                <a href="img/product3.webp" data-fancybox="gallery1"
+                                                    class="images-product__slide swiper-slide">
+                                                    <img src="img/product3.webp" alt="">
+                                                </a>
+                                                <a href="img/product2.webp" data-fancybox="gallery1"
+                                                    class="images-product__slide swiper-slide">
+                                                    <img src="img/product2.webp" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="images-product__thumbs">
+                                            <div class="images-product__arrow-prev arrow-prev">
+                                                <svg aria-hidden="true" width="19" height="8">
+                                                    <use xlink:href="img/sprite.svg#arrow2"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="images-product__thumb swiper">
+                                                <div class="images-product__wrapper swiper-wrapper">
+                                                    <div class="images-product__slide swiper-slide">
+                                                        <img loading="lazy" src="img/product1.webp" alt="">
+                                                    </div>
+                                                    <div class="images-product__slide swiper-slide">
+                                                        <div class="play">
+                                                            <svg aria-hidden="true" width="15" height="17">
+                                                                <use xlink:href="img/sprite.svg#play"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="images-product__slide swiper-slide">
+                                                        <img loading="lazy" src="img/product3.webp" alt="">
+                                                    </div>
+                                                    <div class="images-product__slide swiper-slide">
+                                                        <img loading="lazy" src="img/product3.webp" alt="">
+                                                    </div>
+                                                    <div class="images-product__slide swiper-slide">
+                                                        <img loading="lazy" src="img/product2.webp" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="images-product__arrow-next arrow-next">
+                                                <svg aria-hidden="true" width="19" height="8">
+                                                    <use xlink:href="img/sprite.svg#arrow2"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-product-card2__bottom">
+                                <div data-tabs class="tabs">
+                                    <nav data-tabs-titles class="tabs__navigation">
+                                        <button type="button" class="tabs__title">Описание</button>
+                                        <button type="button" class="tabs__title">Характеристики</button>
+                                        <button type="button" class="tabs__title">Отзывы</button>
+                                        <button type="button" class="tabs__title">Документы</button>
+                                        <button type="button" class="tabs__title _tab-active">Оплата</button>
+                                        <button type="button" class="tabs__title">Доставка</button>
+                                    </nav>
+                                    <div data-tabs-body class="tabs__content">
+                                        <div class="tabs__body">
+                                            Содержимое первого таба
+                                        </div>
+                                        <div class="tabs__body">
+                                            Содержимое второго таба
+                                        </div>
+                                        <div class="tabs__body">
+                                            Содержимое третьего таба
+                                        </div>
+                                        <div class="tabs__body">
+                                            Содержимое четвертого таба
+                                        </div>
+                                        <div class="tabs__body">
+                                            <div class="left-product-card2__text">
+                                                <p>
+                                                    <span>После оформления заказа с вами свяжется менеджер, чтобы
+                                                        подтвердить
+                                                        заказ.</span> Он уточнит куда направить счет для оплаты заказа.
+                                                    Обычно наши
+                                                    клиенты используют для этого WhatsApp, но вы можете выбрать другой
+                                                    удобный мессенджер или почту.
+                                                </p>
+                                                <p>
+                                                    <span>Оплата производится по счету в приложении банка по
+                                                        qr-коду.</span> Оплата
+                                                    возможна: Наличными при оформлении заказа в салоне и самовывозе,
+                                                    банковской картой. Безналичный расчет принимается при самовывозе в
+                                                    салоне или при оформлении доставки на сайте.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__body">
+                                            Содержимое пятого таба
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="set-product-card2">
+                                    <h2 class="title2">Купить набор</h2>
+                                    <div class="set-product-card2__body">
+                                        <div class="set-product-card2__left">
+                                            <div class="set-product-card2__column column1">
+                                                <div class="set-product-card2__item">
+                                                    <div class="set-product-card2__pic1">
+                                                        <img loading="lazy" src="img/product1.webp" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="set-product-card2__prices">
+                                                    <div class="set-product-card2__new-price">
+                                                        12 341 ₽
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="set-product-card2__icon">
+                                                <svg aria-hidden="true" width="11" height="11">
+                                                    <use xlink:href="img/sprite.svg#plus1"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="set-product-card2__column column2">
+                                                <div class="set-product-card2__item">
+                                                    <div class="set-product-card2__sliders">
+                                                        <div class="set-product-card2__slider swiper">
+                                                            <div class="set-product-card2__wrapper swiper-wrapper">
+                                                                <a href="#"
+                                                                    class="set-product-card2__slide swiper-slide">
+                                                                    <div class="set-product-card2__pic1">
+                                                                        <img loading="lazy" src="img/product2.webp"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="set-product-card2__text">
+                                                                        <div class="set-product-card2__title">
+                                                                            Шлем OF616 AIRFLOW II RUSH
+                                                                            (бело-сине-красный, M)
+                                                                        </div>
+                                                                        <div class="set-product-card2__price2">11 345₽
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#"
+                                                                    class="set-product-card2__slide swiper-slide">
+                                                                    <div class="set-product-card2__pic1">
+                                                                        <img loading="lazy" src="img/product2.webp"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="set-product-card2__text">
+                                                                        <div class="set-product-card2__title">
+                                                                            Шлем OF616 AIRFLOW II RUSH
+                                                                            (бело-сине-красный, M)
+                                                                        </div>
+                                                                        <div class="set-product-card2__price2">11 345₽
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="set-product-card2__arrow-prev">
+                                                            <svg aria-hidden="true" width="13" height="7">
+                                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="set-product-card2__arrow-next">
+                                                            <svg aria-hidden="true" width="13" height="7">
+                                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="set-product-card2__sliders">
+                                                        <div class="set-product-card2__slider swiper">
+                                                            <div class="set-product-card2__wrapper swiper-wrapper">
+                                                                <a href="#"
+                                                                    class="set-product-card2__slide swiper-slide">
+                                                                    <div class="set-product-card2__pic1">
+                                                                        <img loading="lazy" src="img/product3.webp"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="set-product-card2__text">
+                                                                        <div class="set-product-card2__title">
+                                                                            Перчатки DF CROSS (бело-сине-красный, M)
+                                                                        </div>
+                                                                        <div class="set-product-card2__price2">1 199₽
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#"
+                                                                    class="set-product-card2__slide swiper-slide">
+                                                                    <div class="set-product-card2__pic1">
+                                                                        <img loading="lazy" src="img/product3.webp"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="set-product-card2__text">
+                                                                        <div class="set-product-card2__title">
+                                                                            Перчатки DF CROSS (бело-сине-красный, M)
+                                                                        </div>
+                                                                        <div class="set-product-card2__price2">1 199₽
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="set-product-card2__arrow-prev">
+                                                            <svg aria-hidden="true" width="13" height="7">
+                                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="set-product-card2__arrow-next">
+                                                            <svg aria-hidden="true" width="13" height="7">
+                                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="set-product-card2__prices">
+                                                    <div class="set-product-card2__new-price">
+                                                        2 341 ₽
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="set-product-card2__icon icon-minus">
+                                            <svg aria-hidden="true" width="11" height="1">
+                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                            </svg>
+                                            <svg aria-hidden="true" width="11" height="1">
+                                                <use xlink:href="img/sprite.svg#minus"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="set-product-card2__column column3">
+                                            <div class="set-product-card2__item">
+                                                <div class="set-product-card2__images">
+                                                    <div class="set-product-card2__pic1">
+                                                        <img loading="lazy" src="img/product1.webp" alt="">
+                                                    </div>
+                                                    <div class="set-product-card2__pic1">
+                                                        <img loading="lazy" src="img/product3.webp" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="set-product-card2__images">
+                                                    <div class="set-product-card2__pic1">
+                                                        <img loading="lazy" src="img/product2.webp" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="set-product-card2__prices">
+                                                <div class="set-product-card2__old-price">
+                                                    14 682 ₽
+                                                </div>
+                                                <div class="set-product-card2__new-price">
+                                                    12 544 ₽
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn">Заказать набор</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-da=".left-product-card2, 992, 1" class="right-product-card2">
+                            <div class="right-product-card2__column">
+                                <div class="right-product-card2__price">
+                                    12 341 ₽
+                                </div>
+                                <div class="right-product-card2__desc">
+                                    <div class="right-product-card2__items">
+                                        <div class="right-product-card2__title">Цвет: Темно-синий</div>
+                                        <div class="right-product-card2__item">
+                                            <a href="#" class="right-product-card2__color color_orange">
+                                                <span></span>
+                                            </a>
+                                            <a href="#" class="right-product-card2__color color_blue active">
+                                                <span></span>
+                                            </a>
+                                            <a href="#" class="right-product-card2__color color_violet">
+                                                <span></span>
+                                            </a>
+                                            <a href="#" class="right-product-card2__color color_green">
+                                                <span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="right-product-card2__items">
+                                        <div class="right-product-card2__title">Размер: S</div>
+                                        <div class="right-product-card2__item">
+                                            <a href="#" class="right-product-card2__size active">
+                                                <span>S</span>
+                                            </a>
+                                            <a href="#" class="right-product-card2__size">
+                                                <span>M</span>
+                                            </a>
+                                            <a href="#" class="right-product-card2__size">
+                                                <span>L</span>
+                                            </a>
+                                            <a href="#" class="right-product-card2__size">
+                                                <span>XL</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-product-card2__buttons">
+                                    <div class="right-product-card2__button">
+                                        <div data-quantity class="quantity">
+                                            <div class="quantity__input">
+                                                <input data-quantity-value autocomplete="off" type="text"
+                                                    name="form[]" value="1">
+                                            </div>
+                                            <div class="quantity__buttons">
+                                                <button data-quantity-plus type="button"
+                                                    class="quantity__button quantity__button_plus">
+                                                    <svg aria-hidden="true" width="8" height="8">
+                                                        <use xlink:href="img/sprite.svg#plus1"></use>
+                                                    </svg>
+                                                </button>
+                                                <button data-quantity-minus type="button"
+                                                    class="quantity__button quantity__button_minus">
+                                                    <svg aria-hidden="true" width="8" height="1">
+                                                        <use xlink:href="img/sprite.svg#minus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-cart">
+                                            <img src="img/icon/cart2.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn">Быстрый заказ</a>
+                                </div>
+                            </div>
+                            <div class="right-product-card2__column">
+                                <div class="links-right-product-card2">
+                                    <div class="links-right-product-card2__link">
+                                        <div class="links-right-product-card2__icon">
+                                            <div class="favorites-icons active">
+                                                <div class="favorites-icons__icon">
+                                                    <img src="img/icon/heart2.svg" alt="">
+                                                </div>
+                                                <div class="favorites-icons__icon-active">
+                                                    <svg aria-hidden="true" width="13" height="11">
+                                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>В избранное</span>
+                                    </div>
+                                    <a href="#" class="links-right-product-card2__link">
+                                        <div class="links-right-product-card2__icon">
+                                            <svg aria-hidden="true" width="11" height="11">
+                                                <use xlink:href="img/sprite.svg#share"></use>
+                                            </svg>
+                                        </div>
+                                        <span>Поделиться</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right-product-card2__column">
+                                <div class="right-product-card2__title">
+                                    Наличие в мотосалонах Forsage
+                                </div>
+                                <div class="list-right-product-card2">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="list-right-product-card2__name">
+                                                г. Краснодар, ул. Уральская, 99 TЦ «Вега», 2-й этаж
+                                            </a>
+                                            <div class="list-right-product-card2__circles">
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="list-right-product-card2__name">
+                                                г. Краснодар, ул. Дзержинского, 239
+                                            </a>
+                                            <div class="list-right-product-card2__circles">
+                                                <span class="active"></span>
+                                                <span class="active"></span>
+                                                <span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="list-right-product-card2__name">
+                                                г. Геленджик, ул. Родниковая, 1В
+                                            </a>
+                                            <div class="list-right-product-card2__circles">
+                                                <span class="active"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right-product-card2__column">
+                                <div class="links-right-product-card2">
+                                    <a href="#" class="links-right-product-card2__link">
+                                        <div class="links-right-product-card2__icon">
+                                            <img loading="lazy" src="img/icon/shipping-fast.svg" alt="">
+                                        </div>
+                                        <span>Рассчитать доставку</span>
+                                    </a>
+                                    <a href="#" class="links-right-product-card2__link">
+                                        <div class="links-right-product-card2__icon">
+                                            <img loading="lazy" src="img/icon/sale.svg" alt="">
+                                        </div>
+                                        <span>Хочу дешевле!</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right-product-card2__column">
+                                <div class="right-product-card2__title">
+                                    Доставка:
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Доставка по России
+                                        </div>
+                                        <div class="right-product-card2__value">Да</div>
+                                    </li>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Самовывоз
+                                        </div>
+                                        <div class="right-product-card2__value">По запросу</div>
+                                    </li>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Служба доставки
+                                        </div>
+                                        <div class="right-product-card2__value">СДЭК</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right-product-card2__column">
+                                <div class="right-product-card2__title">
+                                    Оплата
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Банковская карта
+                                        </div>
+                                        <div class="right-product-card2__value">Да</div>
+                                    </li>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Наличные
+                                        </div>
+                                        <div class="right-product-card2__value">По запросу</div>
+                                    </li>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            СБП
+                                        </div>
+                                        <div class="right-product-card2__value">Да</div>
+                                    </li>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Выставление счета
+                                        </div>
+                                        <div class="right-product-card2__value">Да</div>
+                                    </li>
+                                    <li>
+                                        <div class="right-product-card2__name">
+                                            Кредит \ рассрочка
+                                        </div>
+                                        <div class="right-product-card2__value">Да</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-related-products">
+                <div class="container">
+                    <h2 class="title2">
+                        С этим товаром покупают
+                    </h2>
+                    <div class="block-related-products__content">
+                        <div class="block-related-products__slider swiper">
+                            <div class="block-related-products__wrapper swiper-wrapper">
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-related-products__slide swiper-slide">
+                                    <div class="card-product">
+                                        <a href="#" class="card-product__image">
+                                            <img src="img/image53.webp" alt="">
+                                        </a>
+                                        <div class="card-product__item">
+                                            <a href="#" class="card-product__title">
+                                                Квадроцикл YACOTA SELA 200
+                                            </a>
+                                            <div class="card-product__bottom">
+                                                <div class="card-product__prices">
+                                                    <div class="card-product__new-price">
+                                                        225 000 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="card-product__buttons">
+                                                    <a href="#" class="card-product__cart">
+                                                        <img loading="lazy" src="img/icon/cart.svg" alt="">
+                                                    </a>
+                                                    <a href="#" class="card-product__arrow">
+                                                        <svg aria-hidden="true" width="12" height="11">
+                                                            <use xlink:href="img/sprite.svg#arrow3"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-related-products__arrows">
+                            <div class="block-related-products__arrow-prev arrow-prev2">
+                                <svg aria-hidden="true" width="12" height="6">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </div>
+                            <div class="block-related-products__arrow-next arrow-next2">
+                                <svg aria-hidden="true" width="12" height="6">
+                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-sale">
+                <div class="container">
+                    <div class="block-sale__slider swiper">
+                        <div class="block-sale__wrapper swiper-wrapper">
+                            <a href="#" class="block-sale__slide slide1 swiper-slide">
+                                <img src="img/image24.webp" alt="">
+                            </a>
+                            <a href="#" class="block-sale__slide slide2 swiper-slide">
+                                <img src="img/image1.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-previously2">
+                <div class="container">
+                    <div class="block-previously2__content">
+                        <div class="block-previously2__top">
+                            <div class="block-previously2__title">
+                                Ранее вы смотрели
+                            </div>
+                            <div class="block-previously2__arrows">
+                                <div class="block-previously2__arrow-prev">
+                                    <svg aria-hidden="true" width="13" height="7">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                                <div class="block-previously2__arrow-next">
+                                    <svg aria-hidden="true" width="13" height="7">
+                                        <use xlink:href="img/sprite.svg#arrow1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-previously2__body">
+                            <div class="block-previously2__slider swiper">
+                                <div class="block-previously2__wrapper swiper-wrapper">
+                                    <div class="block-previously2__slide swiper-slide">
+                                        <a href="#" class="card-previously">
+                                            <img loading="lazy" src="img/image53.webp" alt=""
+                                                class="card-previously__pic1">
+                                            <div class="card-previously__title">
+                                                Cfmoto cforce 1000 EPS LTD (С пробегом)
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="block-previously2__slide swiper-slide">
+                                        <a href="#" class="card-previously">
+                                            <img loading="lazy" src="img/image53.webp" alt=""
+                                                class="card-previously__pic1">
+                                            <div class="card-previously__title">
+                                                Cfmoto cforce 1000 EPS LTD (С пробегом)
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="block-previously2__slide swiper-slide">
+                                        <a href="#" class="card-previously">
+                                            <img loading="lazy" src="img/image53.webp" alt=""
+                                                class="card-previously__pic1">
+                                            <div class="card-previously__title">
+                                                Cfmoto cforce 1000 EPS LTD (С пробегом)
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="block-previously2__slide swiper-slide">
+                                        <a href="#" class="card-previously">
+                                            <img loading="lazy" src="img/image53.webp" alt=""
+                                                class="card-previously__pic1">
+                                            <div class="card-previously__title">
+                                                Cfmoto cforce 1000 EPS LTD (С пробегом)
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-border">Показать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-forms">
+                <div class="container">
+                    <div class="block-forms__content">
+                        <img loading="lazy" src="img/image21.webp" alt="" class="block-forms__bg1">
+                        <div class="block-forms__left">
+                            <h2 class="title2">
+                                Остались вопросы?
+                            </h2>
+                            <img loading="lazy" src="img/image20.webp" alt="" class="block-forms__pic1">
+                        </div>
+                        <div class="block-forms__right">
+                            <p>
+                                Заполните форму и мы свяжемся с вами в течение рабочего дня
+                            </p>
+                            <form action="#">
+                                <div class="form">
+                                    <div class="form__inputs">
+                                        <div class="form__input">
+                                            <input data-required autocomplete="off" type="text" name="form[]"
+                                                data-error="Обязательное поле" placeholder="Имя">
+                                        </div>
+                                        <div class="form__input">
+                                            <input data-required autocomplete="off" type="text" name="form[]"
+                                                data-error="Обязательное поле" placeholder="Телефон" class="tel">
+                                        </div>
+                                    </div>
+                                    <label class="checkbox">
+                                        <input data-required data-error="Обязательно поле" class="checkbox__input"
+                                            type="checkbox" name="form[]">
+                                        <span class="checkbox__label">
+                                            <span class="checkbox__icon">
+                                                <svg aria-hidden="true" width="16" height="6">
+                                                    <use xlink:href="img/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="checkbox__text">
+                                                Соглашаюсь на обработку персональных данных
+                                                и принимаю политику конфиденциальности
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <button type="submit" class="form__button">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
