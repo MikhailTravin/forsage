@@ -3156,9 +3156,6 @@
       background-color: var(--theme-color-text-common1);
       color: #fff;
     }
-    &:hover {
-      color: var(--theme-color-text-common1);
-    }
     @media (max-width: 1240px) {
       min-height: 36px;
     }
@@ -4469,9 +4466,6 @@
         @media (max-width: 768px) {
           font-weight: 600;
           font-size: 12px;
-        }
-        &:hover {
-          color: #024bcf;
         }
         &._tab-active {
           color: #fff;
