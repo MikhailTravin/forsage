@@ -130,7 +130,7 @@
                             <div class="product-card-block-intro__right">
                                 <div class="product-card-block-intro__price">944 900₽</div>
                                 <div class="product-card-block-intro__buttons">
-                                    <a href="#" class="btn">Заказать</a>
+                                    <a href="#" data-popup="#popup1" class="btn">Заказать</a>
                                     <a href="#" class="btn-border">Рассрочка 0%</a>
                                     <a href="#" class="btn-border">Кредитный калькулятор</a>
                                 </div>
@@ -293,13 +293,17 @@
                                         class="block-gallery__slide swiper-slide">
                                         <img loading="lazy" src="img/image14.webp" alt="">
                                     </a>
+                                    <a data-fancybox="gallery8" href="img/image11.webp"
+                                        class="block-gallery__slide swiper-slide">
+                                        <img loading="lazy" src="img/image11.webp" alt="">
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- Активный слайд поверх -->
-                            <div class="block-gallery__active-slide">
+                            <a href="" data-fancybox="gallery8" class="block-gallery__active-slide">
                                 <!-- Контент активного слайда будет добавляться динамически -->
-                            </div>
+                            </a>
                         </div>
 
                         <div class="block-gallery__pagination pagination"></div>
@@ -804,6 +808,62 @@
 
         </main>
         {% include 'blocks/footer.njk' %}
+    </div>
+    <div id="popup1" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <div data-close class="popup__close">
+                    <img loading="lazy" src="img/icon/close1.svg" alt="">
+                </div>
+                <div class="popup__body">
+                    <div class="popup__title title2">Заказать</div>
+                    <div class="block-contacts3__form">
+                        <form action="#">
+                            <div class="form">
+                                <div class="form__inputs">
+                                    <div class="form__input">
+                                        <input data-required autocomplete="off" type="text" name="form[]"
+                                            data-error="Обязательное поле" placeholder="Имя">
+                                    </div>
+                                    <div class="form__input">
+                                        <input data-required autocomplete="off" type="text" name="form[]"
+                                            data-error="Обязательное поле" placeholder="Телефон" class="tel">
+                                    </div>
+                                    <div class="form__input">
+                                        <input data-required="email" autocomplete="off" type="text" name="form[]"
+                                            data-error="Обязательное поле" placeholder="E-mail">
+                                    </div>
+                                    <div class="form__input">
+                                        <input data-required autocomplete="off" type="text" name="form[]"
+                                            data-error="Обязательное поле" placeholder="Адрес доставки">
+                                    </div>
+                                    <div class="form__input">
+                                        <textarea placeholder="Комментарий к заказу"></textarea>
+                                    </div>
+                                </div>
+                                <label class="checkbox">
+                                    <input data-required data-error="Обязательно поле" class="checkbox__input"
+                                        type="checkbox" name="form[]">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__icon">
+                                            <svg aria-hidden="true" width="16" height="6">
+                                                <use xlink:href="img/sprite.svg#check"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="checkbox__text">
+                                            Соглашаюсь на обработку персональных данных
+                                            <br>
+                                            и принимаю политику конфиденциальности
+                                        </span>
+                                    </span>
+                                </label>
+                                <button type="submit" class="form__button btn">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     {% include 'blocks/scripts.njk' %}
 </body>

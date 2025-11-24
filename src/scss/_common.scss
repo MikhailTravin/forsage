@@ -4,6 +4,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
+  padding-right: 0px !important;
+  &.hide-scrollbar{
+    margin: 0px 0px 0px 0px !important;
+  }
   .lock & {
     overflow: hidden;
   }
@@ -308,19 +312,10 @@ a {
   // .heading-complex__filter
 
   &__filter {
-    background: #f6f6f6;
-    border-radius: 50px;
     display: flex;
     overflow: hidden;
-    @media (max-width: 1240px) {
-      flex-wrap: wrap;
-      border-radius: 0px;
-      background: transparent;
-      gap: 10px;
-    }
-    @media (max-width: 768px) {
-      gap: 5px;
-    }
+    gap: 5px;
+    flex-wrap: wrap;
   }
 
   // .heading-complex__title

@@ -85,11 +85,11 @@
       width: 67px;
       gap: 7px;
     }
-    &:hover {
+    &.active {
       .center-block-intro__image {
-        border: 2px solid #04bb5b;
+        border: 2px solid rgb(19, 19, 19, 0.45);
         @media (max-width: 768px) {
-          border: 1.35px solid #04bb5b;
+          border: 1.35px solid rgb(19, 19, 19, 0.45);
         }
       }
     }
@@ -111,14 +111,15 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 2px solid rgb(19, 19, 19, 0.45);
+    border: 2px solid #04bb5b;
     padding: 3px;
     overflow: hidden;
     transition: border 0.3s;
+
     @media (max-width: 768px) {
       width: 47px;
       height: 47px;
-      border: 1.35px solid rgb(19, 19, 19, 0.45);
+      border: 1.35px solid #04bb5b;
       padding: 2px;
     }
     img {
@@ -1859,6 +1860,12 @@
     font-size: 14px;
     line-height: 110%;
     color: #000;
+    a {
+      transition: color 0.3s;
+      &:hover {
+        color: var(--theme-color-text-common1);
+      }
+    }
     @media (min-width: 769px) {
       &:nth-child(1) {
         flex: 0 1 6.7%;
@@ -2563,7 +2570,7 @@
 
   &__slide {
     border-radius: 30px;
-    flex: 0 0 33.333%;
+    // width: 33.333% !important;
     transition:
       transform 0.3s ease,
       opacity 0.3s ease;
@@ -4066,34 +4073,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 295px;
-  padding: 42px;
+  overflow: hidden;
+  @media (max-width: 992px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
   // .advertising-block-catalog__pic1
 
   &__pic1 {
-    height: 52px;
-    width: auto;
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   // .advertising-block-catalog__pic2
 
   &__pic2 {
-    width: 24px;
-    height: 24px;
-    margin: 0px 0px 15px 0px;
-  }
-
-  // .advertising-block-catalog__text
-
-  &__text {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+    }
   }
 }
 
@@ -4454,6 +4459,7 @@
     font-size: 13px;
     line-height: 120%;
     color: #040404;
+    transition: color 0.3s;
     &:hover {
       color: #024bcf;
     }
