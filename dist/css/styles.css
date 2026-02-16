@@ -9332,17 +9332,26 @@ a {
   }
 }
 .set-product-card2__slide {
+  height: auto;
+  position: relative;
+}
+.set-product-card2__slide input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.set-product-card2__slide label {
+  gap: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  height: auto;
-  gap: 17px;
 }
 @media (max-width: 600px) {
-  .set-product-card2__slide {
+  .set-product-card2__slide label {
     gap: 8px;
   }
 }

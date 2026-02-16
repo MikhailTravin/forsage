@@ -428,6 +428,18 @@ document.querySelectorAll('.set-product-card2__sliders').forEach((sliderContaine
     const nextArrow = sliderContainer.querySelector('.set-product-card2__arrow-next');
 
     if (slider && prevArrow && nextArrow) {
+        const firstSlide = sliderContainer.querySelector('.set-product-card2__slide');
+        let targetSelector = '';
+
+        if (firstSlide?.querySelector('img[data-image1]')) {
+            targetSelector = 'img[data-image1-target]';
+        } else if (firstSlide?.querySelector('img[data-image2]')) {
+            targetSelector = 'img[data-image2-target]';
+        }
+
+        const targetImg = document.querySelector(targetSelector);
+        if (!targetImg) return;
+
         new Swiper(slider, {
             observer: true,
             observeParents: true,
@@ -438,9 +450,27 @@ document.querySelectorAll('.set-product-card2__sliders').forEach((sliderContaine
                 prevEl: prevArrow,
                 nextEl: nextArrow,
             },
+            on: {
+                init: function () {
+                    updateTargetImage(this, targetImg);
+                },
+                slideChange: function () {
+                    updateTargetImage(this, targetImg);
+                }
+            }
         });
     }
 });
+
+function updateTargetImage(swiper, targetImg) {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    if (!activeSlide) return;
+
+    const sourceImg = activeSlide.querySelector('img');
+    if (sourceImg && targetImg) {
+        targetImg.src = sourceImg.src;
+    }
+}
 
 if (document.querySelector('.images-product')) {
     const thumbsSwiper = new Swiper('.images-product__thumb', {
@@ -1478,10 +1508,24 @@ if (catalogItems) {
 //========================================================================================================================================================
 
 //Избранное
+const favoritesLinks = document.querySelectorAll('.links-right-product-card2__link');
+
+if (favoritesLinks) {
+    favoritesLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            const icon = this.querySelector('.favorites-icons');
+            if (icon) {
+                icon.classList.add('active');
+            }
+        });
+    });
+}
+
 const favoritesIcons = document.querySelectorAll('.favorites-icons');
 if (favoritesIcons) {
     favoritesIcons.forEach(icon => {
-        icon.addEventListener('click', function () {
+        icon.addEventListener('click', function (e) {
+            e.stopPropagation();
             this.classList.toggle('active');
         });
     });
