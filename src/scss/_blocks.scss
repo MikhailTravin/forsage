@@ -4900,12 +4900,21 @@
   // .set-product-card2__slide
 
   &__slide {
-    display: flex;
-    align-items: start;
     height: auto;
-    gap: 17px;
-    @media (max-width: 600px) {
-      gap: 8px;
+    position: relative;
+    input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    label {
+      gap: 17px;
+      display: flex;
+      align-items: start;
+      @media (max-width: 600px) {
+        gap: 8px;
+      }
     }
     .set-product-card2__pic1 {
       flex: 0 0 52px;
