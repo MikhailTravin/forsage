@@ -461,7 +461,6 @@ document.querySelectorAll('.set-product-card2__sliders').forEach((sliderContaine
         });
     }
 });
-
 function updateTargetImage(swiper, targetImg) {
     const activeSlide = swiper.slides[swiper.activeIndex];
     if (!activeSlide) return;
@@ -996,75 +995,96 @@ function updateDropdownPositions() {
     const catalogDropdown = document.querySelector('.catalog-menu__dropdown');
     const searchHeader = document.querySelector('.search-header');
 
-    console.log('Общая высота шапки:', totalHeight, 'px');
-
     if (catalogDropdown) {
-        catalogDropdown.style.top = `${totalHeight}px`;
-        catalogDropdown.style.height = `calc(100vh - ${totalHeight}px)`;
+        catalogDropdown.style.top = totalHeight + 'px';
+        catalogDropdown.style.height = 'calc(100vh - ' + totalHeight + 'px)';
     }
 
     if (searchHeader) {
-        searchHeader.style.top = `${totalHeight}px`;
-        searchHeader.style.height = `calc(100vh - ${totalHeight}px)`;
+        searchHeader.style.top = totalHeight + 'px';
+        searchHeader.style.height = 'calc(100vh - ' + totalHeight + 'px)';
     }
 }
 
-// Объявляем header глобально
 const header = document.querySelector('.header');
+
+function updateBottomHeaderPosition() {
+    const bottomHeader = document.querySelector('.bottom-header');
+    if (!bottomHeader || !header) return;
+
+    if (header.classList.contains('_header-scroll')) {
+        bottomHeader.style.top = '0px';
+        return;
+    }
+
+    let totalHeight = 0;
+    const topHeader = document.querySelector('.top-header');
+    const centerHeader = document.querySelector('.center-header');
+
+    if (topHeader) totalHeight += topHeader.offsetHeight;
+    if (centerHeader) totalHeight += centerHeader.offsetHeight;
+
+    bottomHeader.style.top = totalHeight + 'px';
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     if (header) {
         function updateHeader() {
-            if (window.scrollY > 0) {
+            const wasScrolled = header.classList.contains('_header-scroll');
+            const isScrolled = window.scrollY > 0;
+
+            if (isScrolled) {
                 header.classList.add('_header-scroll');
             } else {
                 header.classList.remove('_header-scroll');
             }
-            updateDropdownPositions();
+
+            updateBottomHeaderPosition();
+            setTimeout(updateDropdownPositions, 50);
         }
 
         updateHeader();
-        window.addEventListener('scroll', updateHeader);
+
+        let scrollTimeout;
+        window.addEventListener('scroll', function () {
+            if (scrollTimeout) {
+                window.cancelAnimationFrame(scrollTimeout);
+            }
+            scrollTimeout = window.requestAnimationFrame(function () {
+                updateHeader();
+            });
+        });
     }
 
-    const bottomHeader = document.querySelector('.bottom-header');
-    if (bottomHeader && header && !header.classList.contains('_header-scroll')) {
-        let totalHeight = 0;
-        const topHeader = document.querySelector('.top-header');
-        const centerHeader = document.querySelector('.center-header');
+    setTimeout(function () {
+        updateBottomHeaderPosition();
+        updateDropdownPositions();
+    }, 100);
 
-        if (topHeader) totalHeight += topHeader.offsetHeight;
-        if (centerHeader) totalHeight += centerHeader.offsetHeight;
-
-        bottomHeader.style.top = totalHeight + 'px';
-    }
-
-    updateDropdownPositions();
+    window.addEventListener('load', function () {
+        updateBottomHeaderPosition();
+        updateDropdownPositions();
+    });
 });
 
 window.addEventListener('resize', function () {
-    const bottomHeader = document.querySelector('.bottom-header');
-    if (bottomHeader && header && !header.classList.contains('_header-scroll')) {
-        let totalHeight = 0;
-        const topHeader = document.querySelector('.top-header');
-        const centerHeader = document.querySelector('.center-header');
-
-        if (topHeader) totalHeight += topHeader.offsetHeight;
-        if (centerHeader) totalHeight += centerHeader.offsetHeight;
-
-        bottomHeader.style.top = totalHeight + 'px';
-    }
-
+    updateBottomHeaderPosition();
     updateDropdownPositions();
 });
 
 const observer = new MutationObserver(function (mutations) {
+    let needUpdate = false;
     mutations.forEach(function (mutation) {
-        if (mutation.type === 'attributes' &&
-            (mutation.attributeName === 'class' || mutation.attributeName === 'style')) {
-            updateDropdownPositions();
+        if (mutation.type === 'attributes' && (mutation.attributeName === 'class' || mutation.attributeName === 'style')) {
+            needUpdate = true;
         }
     });
+    if (needUpdate) {
+        requestAnimationFrame(function () {
+            updateBottomHeaderPosition();
+            updateDropdownPositions();
+        });
+    }
 });
 
 if (header) {
@@ -1078,7 +1098,7 @@ const topHeader = document.querySelector('.top-header');
 const centerHeader = document.querySelector('.center-header');
 const bottomHeader = document.querySelector('.bottom-header');
 
-[topHeader, centerHeader, bottomHeader].forEach(element => {
+[topHeader, centerHeader, bottomHeader].forEach(function (element) {
     if (element) {
         observer.observe(element, {
             attributes: true,
